@@ -164,7 +164,7 @@ def graficar_mst(mst):
     pos = {node: (G.nodes[node]['x'], G.nodes[node]['y']) for node in mst.nodes}
     edge_colors = ['white' for _ in mst.edges]
     edge_widths = [1 for _ in mst.edges]
-    node_colors = ['black' for _ in mst.nodes]
+    node_colors = ['orange' for _ in mst.nodes]
     plt.figure(figsize=(10, 10))
     nx.draw(mst, pos, edge_color=edge_colors, width=edge_widths, node_color=node_colors, with_labels=False, node_size=10)
     for edge in mst.edges:
