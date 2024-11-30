@@ -5,7 +5,6 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import time
 
-# Construcción del Grafo Urbano
 ciudad = "Guadalajara, Mexico"
 G = ox.graph_from_place(ciudad, network_type="drive")
 
